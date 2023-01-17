@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Shopping Cart </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://web.programming-hero.com/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/17d8d64bfe.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="mt-2">
+        <h1 class="text-4xl font-semibold text-center p-2">My Shopping Cart</h1>
+    </header>
+    <main class="bg-slate-100 w-3/4 m-auto p-20 my-10">
+        <div class="cart_items bg-white flex items-center justify-around mb-6 p-9">
+            <div class=" flex items-center gap-12">
+                <img src="images/product-1.png" alt="">
+                <h1 class="font-semibold text-xl">iPhone 11 128GB Black</h1>
+            </div>
+            <div class="flex items-center">
+
+                <div>
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <input class=" bg-slate-100 text-xl w-14 rounded-lg mx-2" type="text">
+                    <button><i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="p-12">
+                    <h5 class="text-lg font-semibold ">$<span>1234</span></h5>
+                </div>
+                <img src="images/remove.png" alt="">
+            </div>
+        </div>
+        <div class="cart_items bg-white flex items-center justify-around mb-6 p-9 ">
+            <div class=" flex items-center gap-12">
+                <img src="images/product-2.png" alt="">
+                <h1 class="font-semibold text-xl">iPhone 11 Casing Black</h1>
+            </div>
+            <div class="flex items-center">
+
+                <div>
+                    <button><i class="fa-solid fa-minus"></i></button>
+                    <input class=" bg-slate-100 text-xl w-14 rounded-lg mx-2" type="text">
+                    <button><i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="p-12">
+                    <h5 class="text-lg font-semibold ">$<span>1234</span></h5>
+                </div>
+                <img src="images/remove.png" alt="">
+            </div>
+        </div>
+        <div class=" bg-white p-9 text-xl font-semibold">
+            <div>
+                <div class=" grid grid-cols-2 ">
+                    <h1 class="pr-80 pl-32 ">Subtotal:</h1>
+                    <h1 class=" pl-72 ">$<span>1234</span></h1>
+                </div>
+                <div class="grid grid-cols-2 my-3">
+                    <h1 class="pr-80 pl-32 ">Tax:</h1>
+                    <h1 class=" pl-72 ">$<span>00</span></h1>
+                </div>
+                <div class="grid grid-cols-2">
+                    <h1 class="pr-80 pl-32 ">Total:</h1>
+                    <h1 class=" pl-72 ">$<span>1234</span></h1>
+                </div>
+            </div>
+        </div>
+        <button class="bg-green-500 hover:bg-green-700 text-white px-6 py-3 rounded-md mt-3 text-right float-right">
+            Check All 
+        </button>
+        
+    </main>
+  </body>
+</html>
