@@ -12,67 +12,70 @@
     <header class="mt-2">
         <h1 class="text-4xl font-semibold text-center p-2">My Shopping Cart</h1>
     </header>
-    <main class="bg-slate-100 w-3/4 m-auto p-20 my-10">
-        <div class="cart_items bg-white flex items-center justify-around mb-6 p-9">
+    <main class="bg-slate-100 w-11/12 p-4  sm:w-3/4 sm:p-20 m-auto my-20 ">
+        <div class="cart_items bg-white flex xl:flex-row flex-col items-center justify-around mb-6 p-9">
             <div class=" flex items-center gap-12">
                 <img src="images/product-1.png" alt="">
-                <h1 class="font-semibold text-xl">iPhone 11 128GB Black</h1>
+                <h1 class="font-semibold text-lg sm:text-xl">iPhone 11 128GB Black</h1>
             </div>
             <div class="flex items-center">
 
                 <div>
                     <button id="btnphoneminus"><i class="fa-solid fa-minus"></i></button>
-                    <input id="phonenum" class=" bg-slate-100 text-xl w-14 rounded-lg mx-2 pl-5" type="number" min="0" value="1">
+                    <input id="phonenum" class=" bg-slate-100 text-xl w-14 rounded-lg pl-3 sm:mx-2 sm:pl-5" type="number" min="0" value="1">
                     <button id="btnphoneplus"><i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
                 <div class="p-12">
-                    <h5 class="text-lg font-semibold ">$<span id="phoneprice">1000</span></h5>
+                    <h5 class="text-base sm:text-lg font-semibold ">$<span id="phoneprice">1000</span></h5>
                 </div>
                 <img src="images/remove.png" alt="">
             </div>
         </div>
-        <div class="cart_items bg-white flex items-center justify-around mb-6 p-9 ">
+        <div class="cart_items bg-white flex xl:flex-row flex-col items-center justify-around mb-6 p-9 ">
             <div class=" flex items-center gap-12">
                 <img src="images/product-2.png" alt="">
-                <h1 class="font-semibold text-xl">iPhone 11 Casing Black</h1>
+                <h1 class="font-semibold text-lg sm:text-xl">iPhone 11 Casing Black</h1>
             </div>
             <div class="flex items-center">
 
                 <div>
                     <button id="btncaseminus"><i class="fa-solid fa-minus"></i></button>
-                    <input id="casenum" class=" bg-slate-100 text-xl w-14 rounded-lg mx-2 pl-5" type="number" min="0" value="1">
+                    <input id="casenum" class=" bg-slate-100 text-xl w-14 rounded-lg pl-3 sm:mx-2 sm:pl-5" type="number" min="0" value="1">
                     <button id="btncaseplus"><i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
                 <div class="p-12">
-                    <h5 class="text-lg font-semibold ">$<span id="caseprice">100</span></h5>
+                    <h5 class="text-base sm:text-lg font-semibold ">$<span id="caseprice">100</span></h5>
                 </div>
                 <img src="images/remove.png" alt="">
             </div>
         </div>
         <div class=" bg-white p-9 text-xl font-semibold">
             <div>
-                <div class=" grid grid-cols-2 ">
-                    <h1 class="pr-80 pl-32 ">Subtotal:</h1>
-                    <h1 class=" pl-72 ">$<span id="subtotal">1100</span></h1>
+                <div class=" grid grid-cols-2 justify-items-center ">
+                    <h1 class=" ">Subtotal:</h1>
+                    <h1 class="  ">$<span id="subtotal">1100</span></h1>
                 </div>
-                <div class="grid grid-cols-2 my-3">
-                    <h1 class="pr-80 pl-32 ">Tax:</h1>
-                    <h1 class=" pl-72 ">$<span id="tax">55</span></h1>
+                <div class="grid grid-cols-2 my-3 justify-items-center">
+                    <h1 class=" ">Tax:</h1>
+                    <h1 class="  ">$<span id="tax">55</span></h1>
                 </div>
-                <div class="grid grid-cols-2">
-                    <h1 class="pr-80 pl-32 ">Total:</h1>
-                    <h1 class=" pl-72 ">$<span id="total">1155</span></h1>
+                <div class="grid grid-cols-2 justify-items-center">
+                    <h1 class=" ">Total:</h1>
+                    <h1 class="  ">$<span id="total">1155</span></h1>
                 </div>
             </div>
         </div>
-        <button class="bg-green-500 hover:bg-green-700 text-white px-6 py-3 rounded-md mt-3 text-right float-right">
-            Check All 
-        </button>
+        <div class="pb-16 sm:pb-4">
+            <button class="bg-green-500 hover:bg-green-700 text-white px-6 py-3 rounded-md mt-3 text-right float-right">
+                Check All 
+            </button>
+        </div>
         
     </main>
 
     <script src="cartnum.js"></script>
+    
   </body>
 </html>
